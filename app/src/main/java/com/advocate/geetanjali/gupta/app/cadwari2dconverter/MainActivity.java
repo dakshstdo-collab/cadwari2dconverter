@@ -367,10 +367,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_privacy_policy) {
-            // TODO: open privacy_policy.html later
-            return true;
-        } else if (id == R.id.action_open_source) {
-            // TODO: open open_source.html later
+            Intent intent = new Intent(this, PrivacyPolicyActivity.class);
+            startActivity(intent);
             return true;
         }
 

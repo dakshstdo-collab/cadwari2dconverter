@@ -7,9 +7,4 @@
         android:title="Privacy Policy"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/action_open_source"
-        android:title="Open Source"
-        app:showAsAction="never" />
-
 </menu>

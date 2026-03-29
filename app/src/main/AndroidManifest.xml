@@ -45,6 +45,10 @@
             android:label="CADwari Viewer"
             android:exported="false"
             android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".PrivacyPolicyActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.advocate.geetanjali.gupta.app.cadwari2dconverter.fileprovider"
