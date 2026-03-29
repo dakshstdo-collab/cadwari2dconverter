@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="translucid_white">#80FFFFFF</color>
+
+    <color name="colorAccent">#F28030</color>
+
+    <color name="primary">#D87A3A</color>
+
+    <color name="colorPrimary">#F28030</color>
+
+    <color name="primaryDark">#814922</color>
+
+    <color name="colorTitle">#4c3100</color>
+
+    <color name="colorOnPrimary">#4c3100</color>
+
+    <color name="colorLight">#FFD7AD</color>
+
+    <color name="snackbar_background_color">#FFD7AD</color>
+
+    <color name="snackbar_text_color">#000000</color>
+
+    <color name="snackbar_undo_color">#F28030</color>
+
+    <color name="colorDark">#FFBF7E</color>
+
+    <color name="colorSection">#FFC68D</color>
+
+    <color name="colorPart">#FFBF7E</color>
+
+    <color name="colorChapter">#FFAB63</color>
+
+    <color name="colorChapterCard">#F28030</color>
+
+    <color name="colorPartCard">#F0904C</color>
+
+    <color name="colorSectionCard">#F09A63</color>
+
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorSuperSub">#343434</color>
+</resources>

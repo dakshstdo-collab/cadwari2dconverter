@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Cadwari2dconverter" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="tooltipStyle">@style/Widget.App.Tooltip</item>
+    </style>
+
+    <style name="Theme.Cadwari2dconverter" parent="Base.Theme.Cadwari2dconverter" />
+
+    <!--  ToolTip Customization @ MainActivity Start -->
+
+    <style name="Widget.App.Tooltip" parent="Widget.Material3.Tooltip">
+        <!-- Tooltip background color -->
+        <item name="backgroundTint">@color/colorLight</item>
+        <!-- Tooltip text color -->
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <!--    Toolbar Customization @ MainActivity  END-->
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/colorOnPrimary</item>
+    </style>
+    <style name="AppToolbarPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/colorLight</item>
+    </style>
+
+    <style name="SearchViewTheme" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/colorOnPrimary</item>
+        <item name="android:textColorHint">@color/colorLight</item>
+    </style>
+
+    <!--  Action Bar @ MainActivity  -->
+
+    <style name="ActionBarCardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+        <item name="rippleColor">@color/colorPart</item>
+    </style>
+
+    <style name="ActionBarItemContentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="ActionBarIconContainerStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ActionBarIconStyle">
+
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@color/colorPart</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="ActionBarTextStyle" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--    <item name="android:paddingTop">4dp</item>-->
+
+
+    <!--  Act Card @ ActSelectionActivity  -->
+    <style name="ActCardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">6dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ActCardTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+
+
+</resources>

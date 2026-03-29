@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLight"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <!-- ViewPager fills entire screen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:elevation="4dp"
+            android:background="@color/colorChapter"
+            app:tabTextColor="@color/colorOnPrimary"
+            app:tabSelectedTextColor="@color/colorOnPrimary"
+            app:tabIndicatorColor="@color/colorOnPrimary"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabPaddingTop="0dp"
+            app:tabPaddingBottom="0dp"
+            app:tabMinWidth="0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorDark"
+            app:elevation="6dp"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/digital_indian_text"
+                android:text="Digital India"
+                android:textAlignment="textStart"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:textColor="@color/colorTitle"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/version_text"
+                android:text="Version 1.0"
+                android:textSize="8sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toStartOf="@id/make_india_text"
+                app:layout_constraintStart_toEndOf="@id/digital_indian_text"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/make_india_text"
+                android:textAlignment="textEnd"
+                android:layout_marginEnd="8dp"
+                android:text="Make in India"
+                android:textSize="8sp"
+                android:textColor="@color/colorTitle"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- FAB save/share button — floats above bottom-right -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="Save / Share"
+        android:src="@android:drawable/ic_menu_share"
+        app:fabSize="mini"
+        app:tint="@color/colorOnPrimary"
+        app:backgroundTint="@color/colorChapter"
+        app:elevation="12dp" />
+
+    <TextView
+        android:id="@+id/tvAppWatermark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="56dp"
+        android:text="CADwari 2D"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorChapterCard"
+        android:alpha="1"
+        android:elevation="12dp" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
